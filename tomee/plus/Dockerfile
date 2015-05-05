@@ -16,10 +16,10 @@ RUN curl --silent --location --retry 3 \
 		${CATALINA_HOME}/bin/*.exe \
 		${CATALINA_HOME}/bin/*.tar.gz \
 		${CATALINA_HOME}/bin/*.original \
-		${CATALINA_HOME}/conf/*.original \
+		#${CATALINA_HOME}/conf/*.original \
 		${CATALINA_HOME}/logs/* \
 		${CATALINA_HOME}/temp/* \
-		${CATALINA_HOME}/webapps/* \
+		#${CATALINA_HOME}/webapps/* \
 		${CATALINA_HOME}/work/* && \
 	mkdir /data && \
 	mv ${CATALINA_HOME}/conf /data/conf && ln -s /data/conf ${CATALINA_HOME}/conf && \
